@@ -29,4 +29,12 @@ function removeDuplicates(array) {
   return arrayWithoutDuplicates;
 }
 
-export { mergeSort, removeDuplicates };
+function getDifference(a, b) {
+  if (a > b) {
+    return a - b;
+  }
+
+  return b - a;
+}
+
+export { mergeSort, removeDuplicates, getDifference };
